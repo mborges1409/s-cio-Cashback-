@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sócio Cashback - Reversa a Inadimplência, Monetize a Paixão</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #0e1a2b;
+            color: #ffffff;
+        }
+        header, section, footer {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            background: #1b2d45;
+            text-align: center;
+        }
+        h1 {
+            color: #ffc107;
+        }
+        h2 {
+            color: #ff9800;
+        }
+        button, .cta {
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 6px; /* Adicionado para botões ficarem com cantos arredondados */
+        }
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+        .three-col {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .faq details {
+            background: #1f2f4a;
+            padding: 15px; /* Ajuste para melhor espaçamento */
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .faq summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffc107; /* Cor para o título da pergunta */
+        }
+        .faq details p {
+            margin-top: 10px; /* Espaço entre o sumário e o conteúdo */
+            color: #ccc;
+        }
+        .logos img {
+            height: 50px;
+            margin: 10px;
+            max-width: 100px; /* Garante que as imagens não estourem */
+            object-fit: contain; /* Mantém a proporção da imagem */
+        }
+        .logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px; /* Espaçamento entre os logos */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px; /* Limita a largura do formulário */
+            margin: 20px auto 0 auto; /* Centraliza o formulário */
+        }
+        input, select, textarea { /* Adicionado textarea caso precise no futuro */
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            background-color: #1f2f4a; /* Cor de fundo dos campos */
+            color: #ffffff; /* Cor do texto dos campos */
+        }
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+        }
+
+        /* Estilos responsivos básicos */
+        @media (max-width: 768px) {
+            .three-col {
+                grid-template-columns: 1fr; /* Coluna única em telas menores */
+            }
+            header, section, footer {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sócio Cashback</h1>
+        <p>Reverta a Inadimplência. Monetize a Paixão do seu Torcedor.</p>
+        <p>A plataforma que transforma consumo em receita para clubes.</p>
+        <button class="cta">Agende uma Demo e Receba uma Projeção de Receita</button>
+    </header>
+
+    <section>
+        <h2>A Inadimplência dos Sócios</h2>
+        <p>Um problema financeiro real que limita o crescimento do seu clube. O Sócio Cashback é a resposta definitiva.</p>
+    </section>
+
+    <section>
+        <h2>Como Funciona?</h2>
+        <p>O torcedor compra nos parceiros e parte do valor vira crédito para pagar a mensalidade. Cashback automático, torcedor engajado, clube lucrativo.</p>
+    </section>
+
+    <section>
+        <h2>Benefícios para o Clube</h2>
+        <div class="grid three-col">
+            <div>
+                <h3>🔁 Redução da Inadimplência</h3>
+                <p>Cashback como incentivo real para manter-se em dia.</p>
+            </div>
+            <div>
+                <h3>💰 Receita Extra</h3>
+                <p>Comissão de 20% a 30% sobre o cashback da base de torcedores.</p>
+            </div>
+            <div>
+                <h3>📈 Engajamento</h3>
+                <p>Valoriza o programa de sócios sem custo adicional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Oportunidade de Negócio</h2>
+        <p>+30 milhões de sócios-torcedores. Receita escalável. Roadmap validado com projeto-piloto e MVP.</p>
+        <button class="cta">Conheça o Potencial. Fale Conosco.</button>
+    </section>
+
+    <section>
+        <h2>Rede de Parceiros</h2>
+        <p>Estabelecimentos estratégicos próximos a estádios e grandes redes. Mais cashback, mais receita.</p>
+        <div class="logos">
+            <img src="https://via.placeholder.com/100x50?text=Logo+Parceiro+1" alt="Logo Parceiro 1">
+            <img src="https://via.placeholder.com/100x50?text=Logo+Parceiro+2" alt="Logo Parceiro 2">
+            <img src="https://via.placeholder.com/100x50?text=Logo+Parceiro+3" alt="Logo Parceiro 3">
+            <img src="https://via.placeholder.com/100x50?text=Logo+Parceiro+4" alt="Logo Parceiro 4">
+        </div>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <form>
+            <label for="interest">Selecione o Tipo de Interesse</label>
+            <select id="interest" name="interest">
+                <option value="">Selecione...</option>
+                <option value="demo">Quero uma demonstração para meu Clube</option>
+                <option value="investor">Sou Investidor</option>
+                <option value="establishment">Quero cadastrar meu Estabelecimento</option>
+            </select>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <input type="tel" placeholder="Seu Telefone">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+            <summary>Qual o custo para o clube?</summary>
+            <p>Sem custo inicial. Ganhamos junto com o clube, sobre o cashback gerado.</p>
+        </details>
+        <details>
+            <summary>Como é feita a integração?</summary>
+            <p>API flexível, integração segura com suporte técnico.</p>
+        </details>
+        <details>
+            <summary>Como o estabelecimento é promovido?</summary>
+            <p>Via app, push, marketing direto e associação com clubes populares.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>O que Nossos Parceiros Dizem</h2>
+        <blockquote>
+            "Revolucionou nossa receita e engajamento!" – <strong>Gestor de Clube</strong>
+        </blockquote>
+        <blockquote>
+            "Torcedores viraram clientes fiéis." – <strong>Dono de Estabelecimento</strong>
+        </blockquote>
+    </section>
+
+    <footer>
+        <p>© 2025 Sócio Cashback. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
